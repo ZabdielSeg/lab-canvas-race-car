@@ -30,9 +30,40 @@ body button {
   box-shadow: 0;
   border-radius: 5px;
   margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 #game-board {
     float: left;
     padding: 20px 0px;
+    position: relative;
+    height: 700px;
+    width: 500px;
+    /* background-color: brown; */
+}
+
+#game-board p {
+  font-size: 18px;
+  font-family: "Verdana"
+}
+
+#restart-button {
+  padding: 20px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  visibility: hidden;
+  background-color: cornsilk;
+  border-radius: 20px;
+}
+
+button:hover{
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px #aaa;
+}
+
+button:active{
+  box-shadow: 0px 0px #717a33;
+  top: 4px;
 }
